@@ -7,6 +7,38 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <main class="app" aria-label="CenteredVVX dashboard">
+      <header class="hero panel">
+        <h1>CenteredVVX Dashboard</h1>
+        <p>Your CenteredVirtualVaultXperience hub for useful links and utilities.</p>
+      </header>
+
+      <section class="panel section-panel" aria-labelledby="ai-heading">
+        <div class="section-head">
+          <h2 id="ai-heading">AI Section</h2>
+          <span class="chip">Tagged: AI</span>
+        </div>
+        <div id="ai-list" class="card-grid" aria-label="AI tools list"></div>
+      </section>
+
+      <section class="panel section-panel" aria-labelledby="music-heading">
+        <div class="section-head">
+          <h2 id="music-heading">Music Tools</h2>
+          <span class="chip">Audio</span>
+        </div>
+        <div id="music-list" class="card-grid" aria-label="Music tools list"></div>
+      </section>
+    </main>
+
+    <section id="error-overlay" class="error-overlay hidden" aria-live="assertive" aria-modal="true" role="dialog" aria-label="Error overlay">
+      <article class="error-card panel">
+        <h2>ERROR 001</h2>
+        <p>Whoops! Apparently, this area of the site isn't Centered yet, try again later!</p>
+        <button id="back-home" type="button" class="ghost-btn">Back to Dashboard</button>
+      </article>
+    </section>
+
+    <script src="./script.js" defer></script>
     <header class="site-header">
       <h1>CenteredVVX</h1>
       <p>CenteredVirtualVaultXperience</p>
