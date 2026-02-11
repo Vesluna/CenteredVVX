@@ -4,6 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CenteredVVX</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>CenteredVVX</h1>
+      <p>CenteredVirtualVaultXperience</p>
+    </header>
+
+    <main id="app" class="app" aria-live="polite">
+      <section id="dashboard-view" class="view" aria-labelledby="dashboard-title">
+        <h2 id="dashboard-title">Dashboard</h2>
+        <p class="subtle">No tools are listed yet — this is the new clean dashboard starting point.</p>
+      </section>
+
+      <section id="error-view" class="view hidden" aria-labelledby="error-title" role="alert">
+        <h2 id="error-title">ERROR 001</h2>
+        <p class="error-subtitle">Whoops! Apparently, this area of the site isn't Centered yet, try again later!</p>
+      </section>
+    </main>
+
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
