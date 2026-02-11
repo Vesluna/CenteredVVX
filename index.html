@@ -1,1 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CenteredVVX | CenteredVirtualVaultXperience</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
+    <header class="site-header" aria-label="Main site header">
+      <h1>CenteredVVX</h1>
+      <p>CenteredVirtualVaultXperience</p>
+    </header>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <ul>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#ai">AI</a></li>
+        <li><a href="#media-audio">Media &amp; Audio</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-content">
+      <section id="search-controls" aria-labelledby="search-controls-heading">
+        <h2 id="search-controls-heading">Search &amp; Filter</h2>
+        <form id="resource-filter-form" class="filter-form" aria-label="Search and filter resources">
+          <div class="search-field">
+            <label for="resource-search-input">Search resources</label>
+            <input
+              id="resource-search-input"
+              class="resource-search-input"
+              name="resource-search"
+              type="search"
+              placeholder="Search links by name or description"
+            />
+          </div>
+
+          <fieldset id="category-filter-controls" class="category-filters">
+            <legend>Filter by category</legend>
+            <label>
+              <input type="checkbox" name="category" value="tools" checked />
+              Tools
+            </label>
+            <label>
+              <input type="checkbox" name="category" value="projects" checked />
+              Projects
+            </label>
+            <label>
+              <input type="checkbox" name="category" value="ai" checked />
+              AI
+            </label>
+            <label>
+              <input type="checkbox" name="category" value="media-audio" checked />
+              Media &amp; Audio
+            </label>
+          </fieldset>
+
+          <button id="clear-filters-button" class="clear-filters-button" type="reset">Clear filters</button>
+        </form>
+      </section>
+
+      <section id="utility-categories" aria-labelledby="utility-categories-heading">
+        <h2 id="utility-categories-heading">Utility Categories</h2>
+
+        <section id="tools" class="category-section" aria-labelledby="tools-heading">
+          <h3 id="tools-heading">Tools</h3>
+          <ul class="link-card-list" aria-label="Tools links">
+            <li class="link-card">
+              <a href="https://example.com/time-tracker">Time Tracker</a>
+              <p>Track focused sessions and review your weekly productivity snapshots.</p>
+            </li>
+            <li class="link-card">
+              <a href="https://example.com/notes-hub">Notes Hub</a>
+              <p>Capture quick ideas and organize them into searchable knowledge collections.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="projects" class="category-section" aria-labelledby="projects-heading">
+          <h3 id="projects-heading">Projects</h3>
+          <ul class="link-card-list" aria-label="Projects links">
+            <li class="link-card">
+              <a href="https://example.com/atlas">Project Atlas</a>
+              <p>A collaborative planning board for mapping milestones and deliverables.</p>
+            </li>
+            <li class="link-card">
+              <a href="https://example.com/garden">Digital Garden</a>
+              <p>A living archive of experiments, reflections, and ongoing personal work.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="ai" class="category-section" aria-labelledby="ai-heading">
+          <h3 id="ai-heading">AI</h3>
+          <ul class="link-card-list" aria-label="AI links">
+            <li class="link-card">
+              <a href="https://example.com/prompt-lab">Prompt Lab</a>
+              <p>Test prompt templates and compare generated responses across models.</p>
+            </li>
+            <li class="link-card">
+              <a href="https://example.com/model-notes">Model Notes</a>
+              <p>Store concise findings from AI evaluations, workflows, and benchmarks.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="media-audio" class="category-section" aria-labelledby="media-audio-heading">
+          <h3 id="media-audio-heading">Media &amp; Audio</h3>
+          <ul class="link-card-list" aria-label="Media and audio links">
+            <li class="link-card">
+              <a href="https://example.com/podcast-playlist">Podcast Playlist</a>
+              <p>Browse episodes curated for focus, learning, and creative inspiration.</p>
+            </li>
+            <li class="link-card">
+              <a href="https://example.com/sound-library">Sound Library</a>
+              <p>Access ambient loops and royalty-free audio assets for your projects.</p>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
