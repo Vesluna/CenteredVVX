@@ -7,13 +7,16 @@
   --muted: #98a6b9;
   --border: #273142;
   --accent: #7db4ff;
+  --panel: #12161b;
+  --text: #e8edf3;
+  --muted: #9ba8b6;
+  --border: #222a34;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html,
 body {
   margin: 0;
   min-height: 100%;
@@ -76,4 +79,29 @@ body {
 
 a {
   color: var(--accent);
+  min-height: 100vh;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: radial-gradient(circle at top, #121823 0%, var(--bg) 55%);
+  color: var(--text);
+  display: grid;
+  place-items: center;
+}
+
+.shell {
+  width: min(640px, 92vw);
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: color-mix(in oklab, var(--panel) 92%, black);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 45%);
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
 }

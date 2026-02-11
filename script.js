@@ -41,3 +41,4 @@
   window.addEventListener('hashchange', route);
   route();
 })();
+// Intentionally minimal for now.
